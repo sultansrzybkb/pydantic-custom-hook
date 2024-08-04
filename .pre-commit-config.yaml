@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: pydantic-typehint
+        name: Pydantic TypeHint Check
+        entry: python hooks/type_hint_checker.py
+        language: system
+        files: \.py$
+
+
